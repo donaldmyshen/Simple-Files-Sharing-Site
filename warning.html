@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="utf-8"/>
+    <title>Warning!</title>
+    <style type="text/css">
+
+    div#Header{
+        background-color:lightblue;
+        border: 2px solid black;
+        padding: 10px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 160%;
+        text-align:center;
+    }
+
+    blockquote{ 
+        border-top: 3px solid black;
+        border-bottom: 3px solid black;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 125%;
+        text-align:center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    </style>
+</head>
+
+<body>
+    <div id = "Header">
+       	<font color='red'>Sorry, wrong password or you don't have the access!</font><br><br>
+		<img src="pika.jpeg" alt='picture' width="300" height="200">
+    </div>
+
+    <div>
+        <blockquote>Back to login!<br>
+            <!--Use logout func back to login page actually -->
+            <form action = "logout.php" method = "POST">
+                <input type = "submit" name = "logout" value="BACK"> 
+            </form>
+        </blockquote>
+    </div>
+
+</body>
+</html>

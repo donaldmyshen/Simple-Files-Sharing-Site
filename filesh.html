@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="utf-8"/>
+    <title>FileSh: Your File Sharing Web</title>
+    <style type="text/css">
+    body{
+        margin: 0 auto;
+        padding: 0;
+        font:12px/16px Verdana, sans-serif; 
+    }
+
+    div#header{
+        background-color:lightblue;
+        border: 2px solid black;
+        padding: 10px;
+    }
+
+    p#welcome{
+        text-align:center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 60px;
+        font-weight: bold;
+        width: 100%;
+    }
+
+    .loginpart{
+        text-align:center;
+        overflow: auto;
+        width: 100%;
+        margin: 50px 0px 0px 0px;
+        padding-top: 100px;
+        padding-bottom: 280px;
+    }
+    
+    blockquote{
+        border-top: 3px solid black;
+        border-bottom: 3px solid black;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 125%;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    </style>
+</head>
+<!-- firt page actually -->
+<body>
+    <div id = "header">
+
+    <p id = welcome >Welcome to the File Sharing web</p>
+
+    </div>    
+
+    <div class="loginpart">       
+        <form action = "login.php" method="POST">
+            <label> Login: <input type = "text" size = 40 name = "username" placeholder = "type username here" required></label>
+            <label> <input type = "text" size = 40 name = "password" placeholder = "type new password" required></label>
+            <input type="submit" name = "submit" value = "Login"> 
+
+        </form>
+        <br>
+        <br>
+        <form action="signup.php" method="post">
+            <label> Signup: <input type = "text" size = 40 name = "username" placeholder = "type new username" required></label>
+            <label> <input type = "text" size = 40 name = "password" placeholder = "type new password" required></label>
+            <input type = "submit" name = "submit" value = "Signup" >
+        </form>
+    </div>
+
+    <div>
+        <blockquote>Connect with：donaldmyshen@outlook.com </blockquote>
+    </div>
+</body>
+</html>
